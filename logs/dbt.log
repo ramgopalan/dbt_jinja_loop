@@ -1,0 +1,913 @@
+
+
+============================== 2022-07-21 16:37:01.706810 | 14462694-19f8-4037-a6bf-59110b12dd60 ==============================
+16:37:01.706810 [info ] [MainThread]: Running with dbt=1.0.3
+16:37:01.707001 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/Users/ramg/.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, defer=None, state=None, cls=<class 'dbt.task.deps.DepsTask'>, which='deps', rpc_method='deps')
+16:37:01.707082 [debug] [MainThread]: Tracking: tracking
+16:37:01.725177 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e8a460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e8a580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e8a5b0>]}
+16:37:01.726043 [info ] [MainThread]: Warning: No packages were found in packages.yml
+16:37:01.726300 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e8a5e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e8a670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107e8a9d0>]}
+
+
+============================== 2022-07-21 16:37:08.193412 | bb656504-b98a-4904-9fd6-8d4dc64bf940 ==============================
+16:37:08.193412 [info ] [MainThread]: Running with dbt=1.0.3
+16:37:08.193797 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/Users/ramg/.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, parse_only=False, threads=None, select=None, exclude=None, selector_name=None, state=None, full_refresh=False, defer=None, cls=<class 'dbt.task.compile.CompileTask'>, which='compile', rpc_method='compile')
+16:37:08.193940 [debug] [MainThread]: Tracking: tracking
+16:37:08.194236 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12f285070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12f285460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12f285400>]}
+16:37:08.210741 [info ] [MainThread]: Partial parse save file not found. Starting full parse.
+16:37:08.211320 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'bb656504-b98a-4904-9fd6-8d4dc64bf940', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12f2bc400>]}
+16:37:08.227661 [debug] [MainThread]: Parsing macros/catalog.sql
+16:37:08.229294 [debug] [MainThread]: Parsing macros/adapters.sql
+16:37:08.257037 [debug] [MainThread]: Parsing macros/materializations/merge.sql
+16:37:08.259261 [debug] [MainThread]: Parsing macros/materializations/seed.sql
+16:37:08.261914 [debug] [MainThread]: Parsing macros/materializations/view.sql
+16:37:08.262677 [debug] [MainThread]: Parsing macros/materializations/table.sql
+16:37:08.264682 [debug] [MainThread]: Parsing macros/materializations/incremental.sql
+16:37:08.269598 [debug] [MainThread]: Parsing macros/materializations/snapshot.sql
+16:37:08.270169 [debug] [MainThread]: Parsing macros/materializations/hooks.sql
+16:37:08.272004 [debug] [MainThread]: Parsing macros/materializations/configs.sql
+16:37:08.273123 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot_merge.sql
+16:37:08.273950 [debug] [MainThread]: Parsing macros/materializations/snapshots/strategies.sql
+16:37:08.282879 [debug] [MainThread]: Parsing macros/materializations/snapshots/helpers.sql
+16:37:08.289206 [debug] [MainThread]: Parsing macros/materializations/snapshots/snapshot.sql
+16:37:08.295548 [debug] [MainThread]: Parsing macros/materializations/tests/test.sql
+16:37:08.298226 [debug] [MainThread]: Parsing macros/materializations/tests/helpers.sql
+16:37:08.299264 [debug] [MainThread]: Parsing macros/materializations/tests/where_subquery.sql
+16:37:08.300198 [debug] [MainThread]: Parsing macros/materializations/models/incremental/column_helpers.sql
+16:37:08.302506 [debug] [MainThread]: Parsing macros/materializations/models/incremental/merge.sql
+16:37:08.308840 [debug] [MainThread]: Parsing macros/materializations/models/incremental/is_incremental.sql
+16:37:08.309809 [debug] [MainThread]: Parsing macros/materializations/models/incremental/incremental.sql
+16:37:08.315087 [debug] [MainThread]: Parsing macros/materializations/models/incremental/on_schema_change.sql
+16:37:08.323593 [debug] [MainThread]: Parsing macros/materializations/models/table/table.sql
+16:37:08.327474 [debug] [MainThread]: Parsing macros/materializations/models/table/create_table_as.sql
+16:37:08.328852 [debug] [MainThread]: Parsing macros/materializations/models/view/view.sql
+16:37:08.332660 [debug] [MainThread]: Parsing macros/materializations/models/view/helpers.sql
+16:37:08.333287 [debug] [MainThread]: Parsing macros/materializations/models/view/create_or_replace_view.sql
+16:37:08.334522 [debug] [MainThread]: Parsing macros/materializations/models/view/create_view_as.sql
+16:37:08.335532 [debug] [MainThread]: Parsing macros/materializations/seeds/seed.sql
+16:37:08.338460 [debug] [MainThread]: Parsing macros/materializations/seeds/helpers.sql
+16:37:08.346562 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_alias.sql
+16:37:08.347333 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_schema.sql
+16:37:08.348640 [debug] [MainThread]: Parsing macros/get_custom_name/get_custom_database.sql
+16:37:08.349425 [debug] [MainThread]: Parsing macros/generic_test_sql/relationships.sql
+16:37:08.349842 [debug] [MainThread]: Parsing macros/generic_test_sql/not_null.sql
+16:37:08.350083 [debug] [MainThread]: Parsing macros/generic_test_sql/unique.sql
+16:37:08.350384 [debug] [MainThread]: Parsing macros/generic_test_sql/accepted_values.sql
+16:37:08.351008 [debug] [MainThread]: Parsing macros/etc/statement.sql
+16:37:08.353060 [debug] [MainThread]: Parsing macros/etc/datetime.sql
+16:37:08.357287 [debug] [MainThread]: Parsing macros/adapters/schema.sql
+16:37:08.358325 [debug] [MainThread]: Parsing macros/adapters/indexes.sql
+16:37:08.359521 [debug] [MainThread]: Parsing macros/adapters/relation.sql
+16:37:08.364028 [debug] [MainThread]: Parsing macros/adapters/freshness.sql
+16:37:08.365512 [debug] [MainThread]: Parsing macros/adapters/persist_docs.sql
+16:37:08.367599 [debug] [MainThread]: Parsing macros/adapters/metadata.sql
+16:37:08.371218 [debug] [MainThread]: Parsing macros/adapters/columns.sql
+16:37:08.375788 [debug] [MainThread]: Parsing tests/generic/builtin.sql
+16:37:08.488124 [debug] [MainThread]: 1603: static parser failed on example/my_first_dbt_model.sql
+16:37:08.497906 [debug] [MainThread]: 1602: parser fallback to jinja rendering on example/my_first_dbt_model.sql
+16:37:08.499524 [debug] [MainThread]: 1699: static parser successfully parsed example/my_second_dbt_model.sql
+16:37:08.552438 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'bb656504-b98a-4904-9fd6-8d4dc64bf940', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12f2da5b0>]}
+16:37:08.554964 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'bb656504-b98a-4904-9fd6-8d4dc64bf940', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12f4b2ee0>]}
+16:37:08.555108 [info ] [MainThread]: Found 2 models, 4 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+16:37:08.555659 [info ] [MainThread]: 
+16:37:08.555870 [debug] [MainThread]: Acquiring new snowflake connection "master"
+16:37:08.556203 [debug] [ThreadPool]: Acquiring new snowflake connection "list_test_db_test_schema"
+16:37:08.559569 [debug] [ThreadPool]: Using snowflake connection "list_test_db_test_schema"
+16:37:08.559655 [debug] [ThreadPool]: On list_test_db_test_schema: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "jinja_practice", "target_name": "dev", "connection_name": "list_test_db_test_schema"} */
+
+    show terse objects in test_db.test_schema
+16:37:08.559716 [debug] [ThreadPool]: Opening a new connection, currently in state init
+16:37:09.763433 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 1.2 seconds
+16:37:09.766972 [debug] [ThreadPool]: On list_test_db_test_schema: Close
+16:37:09.899775 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+16:37:09.900414 [info ] [MainThread]: 
+16:37:09.907506 [debug] [Thread-1  ]: Began running node model.jinja_practice.my_first_dbt_model
+16:37:09.908241 [debug] [Thread-1  ]: Acquiring new snowflake connection "model.jinja_practice.my_first_dbt_model"
+16:37:09.908474 [debug] [Thread-1  ]: Began compiling node model.jinja_practice.my_first_dbt_model
+16:37:09.908668 [debug] [Thread-1  ]: Compiling model.jinja_practice.my_first_dbt_model
+16:37:09.915398 [debug] [Thread-1  ]: Using snowflake connection "model.jinja_practice.my_first_dbt_model"
+16:37:09.915698 [debug] [Thread-1  ]: On model.jinja_practice.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "jinja_practice", "target_name": "dev", "node_id": "model.jinja_practice.my_first_dbt_model"} */
+
+    
+select distinct table_name from test_db.information_schema.tables where table_schema!= 'INFORMATION_SCHEMA'
+16:37:09.915862 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+16:37:11.561393 [debug] [Thread-1  ]: SQL status: SUCCESS 2 in 1.65 seconds
+16:37:11.564716 [debug] [Thread-1  ]: Writing injected SQL for node "model.jinja_practice.my_first_dbt_model"
+16:37:11.566386 [debug] [Thread-1  ]: finished collecting timing info
+16:37:11.566658 [debug] [Thread-1  ]: Began executing node model.jinja_practice.my_first_dbt_model
+16:37:11.566862 [debug] [Thread-1  ]: finished collecting timing info
+16:37:11.567185 [debug] [Thread-1  ]: On model.jinja_practice.my_first_dbt_model: Close
+16:37:11.697901 [debug] [Thread-1  ]: Finished running node model.jinja_practice.my_first_dbt_model
+16:37:11.699272 [debug] [Thread-2  ]: Began running node model.jinja_practice.my_second_dbt_model
+16:37:11.699596 [debug] [Thread-1  ]: Began running node test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710
+16:37:11.700222 [debug] [Thread-2  ]: Acquiring new snowflake connection "model.jinja_practice.my_second_dbt_model"
+16:37:11.700762 [debug] [Thread-1  ]: Acquiring new snowflake connection "test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710"
+16:37:11.701020 [debug] [Thread-2  ]: Began compiling node model.jinja_practice.my_second_dbt_model
+16:37:11.701245 [debug] [Thread-1  ]: Began compiling node test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710
+16:37:11.701473 [debug] [Thread-2  ]: Compiling model.jinja_practice.my_second_dbt_model
+16:37:11.701680 [debug] [Thread-1  ]: Compiling test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710
+16:37:11.712674 [debug] [Thread-2  ]: Writing injected SQL for node "model.jinja_practice.my_second_dbt_model"
+16:37:11.719014 [debug] [Thread-1  ]: Writing injected SQL for node "test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710"
+16:37:11.719668 [debug] [Thread-2  ]: finished collecting timing info
+16:37:11.719877 [debug] [Thread-2  ]: Began executing node model.jinja_practice.my_second_dbt_model
+16:37:11.720058 [debug] [Thread-2  ]: finished collecting timing info
+16:37:11.720417 [debug] [Thread-2  ]: Finished running node model.jinja_practice.my_second_dbt_model
+16:37:11.720564 [debug] [Thread-1  ]: finished collecting timing info
+16:37:11.720790 [debug] [Thread-2  ]: Began running node test.jinja_practice.unique_my_first_dbt_model_id.16e066b321
+16:37:11.721139 [debug] [Thread-1  ]: Began executing node test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710
+16:37:11.721470 [debug] [Thread-2  ]: Acquiring new snowflake connection "test.jinja_practice.unique_my_first_dbt_model_id.16e066b321"
+16:37:11.721633 [debug] [Thread-1  ]: finished collecting timing info
+16:37:11.721768 [debug] [Thread-2  ]: Began compiling node test.jinja_practice.unique_my_first_dbt_model_id.16e066b321
+16:37:11.722040 [debug] [Thread-1  ]: Finished running node test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710
+16:37:11.722172 [debug] [Thread-2  ]: Compiling test.jinja_practice.unique_my_first_dbt_model_id.16e066b321
+16:37:11.722320 [debug] [Thread-1  ]: Began running node test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778
+16:37:11.728234 [debug] [Thread-2  ]: Writing injected SQL for node "test.jinja_practice.unique_my_first_dbt_model_id.16e066b321"
+16:37:11.728551 [debug] [Thread-1  ]: Acquiring new snowflake connection "test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778"
+16:37:11.728768 [debug] [Thread-1  ]: Began compiling node test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778
+16:37:11.728924 [debug] [Thread-1  ]: Compiling test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778
+16:37:11.732165 [debug] [Thread-1  ]: Writing injected SQL for node "test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778"
+16:37:11.732319 [debug] [Thread-2  ]: finished collecting timing info
+16:37:11.732576 [debug] [Thread-2  ]: Began executing node test.jinja_practice.unique_my_first_dbt_model_id.16e066b321
+16:37:11.732758 [debug] [Thread-2  ]: finished collecting timing info
+16:37:11.733057 [debug] [Thread-2  ]: Finished running node test.jinja_practice.unique_my_first_dbt_model_id.16e066b321
+16:37:11.733204 [debug] [Thread-2  ]: Began running node test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493
+16:37:11.733299 [debug] [Thread-1  ]: finished collecting timing info
+16:37:11.733582 [debug] [Thread-2  ]: Acquiring new snowflake connection "test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493"
+16:37:11.733700 [debug] [Thread-1  ]: Began executing node test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778
+16:37:11.733811 [debug] [Thread-2  ]: Began compiling node test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493
+16:37:11.733924 [debug] [Thread-1  ]: finished collecting timing info
+16:37:11.734033 [debug] [Thread-2  ]: Compiling test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493
+16:37:11.734250 [debug] [Thread-1  ]: Finished running node test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778
+16:37:11.736951 [debug] [Thread-2  ]: Writing injected SQL for node "test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493"
+16:37:11.737364 [debug] [Thread-2  ]: finished collecting timing info
+16:37:11.737482 [debug] [Thread-2  ]: Began executing node test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493
+16:37:11.737588 [debug] [Thread-2  ]: finished collecting timing info
+16:37:11.737816 [debug] [Thread-2  ]: Finished running node test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493
+16:37:11.738442 [debug] [MainThread]: Connection 'master' was properly closed.
+16:37:11.738558 [debug] [MainThread]: Connection 'test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778' was properly closed.
+16:37:11.738647 [debug] [MainThread]: Connection 'test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493' was properly closed.
+16:37:11.742572 [info ] [MainThread]: Done.
+16:37:11.742863 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12f4b27f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12f4b2c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12f4b27c0>]}
+
+
+============================== 2022-07-21 16:38:02.890660 | 09070c73-6324-4461-87d6-97f80e4b9ed5 ==============================
+16:38:02.890660 [info ] [MainThread]: Running with dbt=1.0.3
+16:38:02.891175 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/Users/ramg/.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, parse_only=False, threads=None, select=None, exclude=None, selector_name=None, state=None, full_refresh=False, defer=None, cls=<class 'dbt.task.compile.CompileTask'>, which='compile', rpc_method='compile')
+16:38:02.891312 [debug] [MainThread]: Tracking: tracking
+16:38:02.891574 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a972100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a9549d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a954280>]}
+16:38:02.917096 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+16:38:02.917394 [debug] [MainThread]: Partial parsing: updated file: jinja_practice://models/example/my_first_dbt_model.sql
+16:38:02.923369 [debug] [MainThread]: 1603: static parser failed on example/my_first_dbt_model.sql
+16:38:02.934291 [debug] [MainThread]: 1602: parser fallback to jinja rendering on example/my_first_dbt_model.sql
+16:38:02.949189 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '09070c73-6324-4461-87d6-97f80e4b9ed5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11ab200d0>]}
+16:38:02.952768 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '09070c73-6324-4461-87d6-97f80e4b9ed5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a96a610>]}
+16:38:02.953002 [info ] [MainThread]: Found 2 models, 4 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+16:38:02.953884 [info ] [MainThread]: 
+16:38:02.954175 [debug] [MainThread]: Acquiring new snowflake connection "master"
+16:38:02.954585 [debug] [ThreadPool]: Acquiring new snowflake connection "list_test_db_test_schema"
+16:38:02.958491 [debug] [ThreadPool]: Using snowflake connection "list_test_db_test_schema"
+16:38:02.958758 [debug] [ThreadPool]: On list_test_db_test_schema: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "jinja_practice", "target_name": "dev", "connection_name": "list_test_db_test_schema"} */
+
+    show terse objects in test_db.test_schema
+16:38:02.958847 [debug] [ThreadPool]: Opening a new connection, currently in state init
+16:38:03.694994 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.74 seconds
+16:38:03.697392 [debug] [ThreadPool]: On list_test_db_test_schema: Close
+16:38:03.798926 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+16:38:03.799323 [info ] [MainThread]: 
+16:38:03.803901 [debug] [Thread-1  ]: Began running node model.jinja_practice.my_first_dbt_model
+16:38:03.804288 [debug] [Thread-1  ]: Acquiring new snowflake connection "model.jinja_practice.my_first_dbt_model"
+16:38:03.804436 [debug] [Thread-1  ]: Began compiling node model.jinja_practice.my_first_dbt_model
+16:38:03.804555 [debug] [Thread-1  ]: Compiling model.jinja_practice.my_first_dbt_model
+16:38:03.808758 [debug] [Thread-1  ]: Using snowflake connection "model.jinja_practice.my_first_dbt_model"
+16:38:03.808914 [debug] [Thread-1  ]: On model.jinja_practice.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "jinja_practice", "target_name": "dev", "node_id": "model.jinja_practice.my_first_dbt_model"} */
+
+    
+select distinct table_name from test_db.information_schema.tables where table_schema!= 'INFORMATION_SCHEMA'
+16:38:03.809054 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+16:38:05.302340 [debug] [Thread-1  ]: SQL status: SUCCESS 2 in 1.49 seconds
+16:38:05.304027 [debug] [Thread-1  ]: Writing injected SQL for node "model.jinja_practice.my_first_dbt_model"
+16:38:05.304665 [debug] [Thread-1  ]: finished collecting timing info
+16:38:05.304847 [debug] [Thread-1  ]: Began executing node model.jinja_practice.my_first_dbt_model
+16:38:05.305012 [debug] [Thread-1  ]: finished collecting timing info
+16:38:05.305176 [debug] [Thread-1  ]: On model.jinja_practice.my_first_dbt_model: Close
+16:38:05.413737 [debug] [Thread-1  ]: Finished running node model.jinja_practice.my_first_dbt_model
+16:38:05.414660 [debug] [Thread-2  ]: Began running node model.jinja_practice.my_second_dbt_model
+16:38:05.414854 [debug] [Thread-1  ]: Began running node test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710
+16:38:05.415189 [debug] [Thread-2  ]: Acquiring new snowflake connection "model.jinja_practice.my_second_dbt_model"
+16:38:05.415430 [debug] [Thread-1  ]: Acquiring new snowflake connection "test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710"
+16:38:05.415539 [debug] [Thread-2  ]: Began compiling node model.jinja_practice.my_second_dbt_model
+16:38:05.415633 [debug] [Thread-1  ]: Began compiling node test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710
+16:38:05.415731 [debug] [Thread-2  ]: Compiling model.jinja_practice.my_second_dbt_model
+16:38:05.415819 [debug] [Thread-1  ]: Compiling test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710
+16:38:05.417925 [debug] [Thread-2  ]: Writing injected SQL for node "model.jinja_practice.my_second_dbt_model"
+16:38:05.425436 [debug] [Thread-1  ]: Writing injected SQL for node "test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710"
+16:38:05.425858 [debug] [Thread-2  ]: finished collecting timing info
+16:38:05.425963 [debug] [Thread-1  ]: finished collecting timing info
+16:38:05.426060 [debug] [Thread-2  ]: Began executing node model.jinja_practice.my_second_dbt_model
+16:38:05.426152 [debug] [Thread-1  ]: Began executing node test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710
+16:38:05.426243 [debug] [Thread-2  ]: finished collecting timing info
+16:38:05.426326 [debug] [Thread-1  ]: finished collecting timing info
+16:38:05.426535 [debug] [Thread-2  ]: Finished running node model.jinja_practice.my_second_dbt_model
+16:38:05.426709 [debug] [Thread-1  ]: Finished running node test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710
+16:38:05.426810 [debug] [Thread-2  ]: Began running node test.jinja_practice.unique_my_first_dbt_model_id.16e066b321
+16:38:05.427134 [debug] [Thread-2  ]: Acquiring new snowflake connection "test.jinja_practice.unique_my_first_dbt_model_id.16e066b321"
+16:38:05.427245 [debug] [Thread-2  ]: Began compiling node test.jinja_practice.unique_my_first_dbt_model_id.16e066b321
+16:38:05.427347 [debug] [Thread-2  ]: Compiling test.jinja_practice.unique_my_first_dbt_model_id.16e066b321
+16:38:05.427457 [debug] [Thread-1  ]: Began running node test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778
+16:38:05.431413 [debug] [Thread-2  ]: Writing injected SQL for node "test.jinja_practice.unique_my_first_dbt_model_id.16e066b321"
+16:38:05.431741 [debug] [Thread-1  ]: Acquiring new snowflake connection "test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778"
+16:38:05.431914 [debug] [Thread-1  ]: Began compiling node test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778
+16:38:05.432020 [debug] [Thread-1  ]: Compiling test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778
+16:38:05.434190 [debug] [Thread-1  ]: Writing injected SQL for node "test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778"
+16:38:05.434398 [debug] [Thread-2  ]: finished collecting timing info
+16:38:05.434536 [debug] [Thread-2  ]: Began executing node test.jinja_practice.unique_my_first_dbt_model_id.16e066b321
+16:38:05.434608 [debug] [Thread-1  ]: finished collecting timing info
+16:38:05.434721 [debug] [Thread-2  ]: finished collecting timing info
+16:38:05.434809 [debug] [Thread-1  ]: Began executing node test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778
+16:38:05.435072 [debug] [Thread-2  ]: Finished running node test.jinja_practice.unique_my_first_dbt_model_id.16e066b321
+16:38:05.435182 [debug] [Thread-1  ]: finished collecting timing info
+16:38:05.435335 [debug] [Thread-2  ]: Began running node test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493
+16:38:05.435604 [debug] [Thread-1  ]: Finished running node test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778
+16:38:05.435769 [debug] [Thread-2  ]: Acquiring new snowflake connection "test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493"
+16:38:05.435908 [debug] [Thread-2  ]: Began compiling node test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493
+16:38:05.435984 [debug] [Thread-2  ]: Compiling test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493
+16:38:05.437998 [debug] [Thread-2  ]: Writing injected SQL for node "test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493"
+16:38:05.438283 [debug] [Thread-2  ]: finished collecting timing info
+16:38:05.438370 [debug] [Thread-2  ]: Began executing node test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493
+16:38:05.438447 [debug] [Thread-2  ]: finished collecting timing info
+16:38:05.438606 [debug] [Thread-2  ]: Finished running node test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493
+16:38:05.439026 [debug] [MainThread]: Connection 'master' was properly closed.
+16:38:05.439106 [debug] [MainThread]: Connection 'test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778' was properly closed.
+16:38:05.439173 [debug] [MainThread]: Connection 'test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493' was properly closed.
+16:38:05.441864 [info ] [MainThread]: Done.
+16:38:05.442044 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11aa09820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11aa09880>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11aa093d0>]}
+
+
+============================== 2022-07-21 17:19:11.185640 | af4726f0-3ce7-4d5d-986e-d8991396e56e ==============================
+17:19:11.185640 [info ] [MainThread]: Running with dbt=1.0.3
+17:19:11.191422 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/Users/ramg/.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, parse_only=False, threads=None, select=None, exclude=None, selector_name=None, state=None, full_refresh=False, defer=None, cls=<class 'dbt.task.compile.CompileTask'>, which='compile', rpc_method='compile')
+17:19:11.191648 [debug] [MainThread]: Tracking: tracking
+17:19:11.192348 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x130819f70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x130819460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x130819400>]}
+17:19:11.214241 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+17:19:11.214624 [debug] [MainThread]: Partial parsing: updated file: jinja_practice://models/example/my_first_dbt_model.sql
+17:19:11.221373 [debug] [MainThread]: 1603: static parser failed on example/my_first_dbt_model.sql
+17:19:11.232528 [debug] [MainThread]: 1602: parser fallback to jinja rendering on example/my_first_dbt_model.sql
+17:19:11.247645 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'af4726f0-3ce7-4d5d-986e-d8991396e56e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1309d10d0>]}
+17:19:11.251998 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'af4726f0-3ce7-4d5d-986e-d8991396e56e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1307fdac0>]}
+17:19:11.252160 [info ] [MainThread]: Found 2 models, 4 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+17:19:11.252865 [info ] [MainThread]: 
+17:19:11.253117 [debug] [MainThread]: Acquiring new snowflake connection "master"
+17:19:11.253478 [debug] [ThreadPool]: Acquiring new snowflake connection "list_test_db_test_schema"
+17:19:11.256860 [debug] [ThreadPool]: Using snowflake connection "list_test_db_test_schema"
+17:19:11.256966 [debug] [ThreadPool]: On list_test_db_test_schema: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "jinja_practice", "target_name": "dev", "connection_name": "list_test_db_test_schema"} */
+
+    show terse objects in test_db.test_schema
+17:19:11.257045 [debug] [ThreadPool]: Opening a new connection, currently in state init
+17:19:12.340951 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 1.08 seconds
+17:19:12.345199 [debug] [ThreadPool]: On list_test_db_test_schema: Close
+17:19:12.499123 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+17:19:12.500082 [info ] [MainThread]: 
+17:19:12.507385 [debug] [Thread-1  ]: Began running node model.jinja_practice.my_first_dbt_model
+17:19:12.507916 [debug] [Thread-1  ]: Acquiring new snowflake connection "model.jinja_practice.my_first_dbt_model"
+17:19:12.508124 [debug] [Thread-1  ]: Began compiling node model.jinja_practice.my_first_dbt_model
+17:19:12.508312 [debug] [Thread-1  ]: Compiling model.jinja_practice.my_first_dbt_model
+17:19:12.515120 [debug] [Thread-1  ]: Using snowflake connection "model.jinja_practice.my_first_dbt_model"
+17:19:12.515414 [debug] [Thread-1  ]: On model.jinja_practice.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "jinja_practice", "target_name": "dev", "node_id": "model.jinja_practice.my_first_dbt_model"} */
+
+    
+select distinct table_name from test_db.information_schema.tables where table_schema!= 'INFORMATION_SCHEMA'
+17:19:12.515565 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+17:19:14.490736 [debug] [Thread-1  ]: SQL status: SUCCESS 2 in 1.98 seconds
+17:19:14.494600 [debug] [Thread-1  ]: Writing injected SQL for node "model.jinja_practice.my_first_dbt_model"
+17:19:14.496821 [debug] [Thread-1  ]: finished collecting timing info
+17:19:14.497195 [debug] [Thread-1  ]: Began executing node model.jinja_practice.my_first_dbt_model
+17:19:14.497474 [debug] [Thread-1  ]: finished collecting timing info
+17:19:14.497753 [debug] [Thread-1  ]: On model.jinja_practice.my_first_dbt_model: Close
+17:19:14.612492 [debug] [Thread-1  ]: Finished running node model.jinja_practice.my_first_dbt_model
+17:19:14.613629 [debug] [Thread-2  ]: Began running node model.jinja_practice.my_second_dbt_model
+17:19:14.613857 [debug] [Thread-1  ]: Began running node test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710
+17:19:14.614352 [debug] [Thread-2  ]: Acquiring new snowflake connection "model.jinja_practice.my_second_dbt_model"
+17:19:14.614803 [debug] [Thread-1  ]: Acquiring new snowflake connection "test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710"
+17:19:14.615030 [debug] [Thread-2  ]: Began compiling node model.jinja_practice.my_second_dbt_model
+17:19:14.615221 [debug] [Thread-1  ]: Began compiling node test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710
+17:19:14.615428 [debug] [Thread-2  ]: Compiling model.jinja_practice.my_second_dbt_model
+17:19:14.615624 [debug] [Thread-1  ]: Compiling test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710
+17:19:14.619536 [debug] [Thread-2  ]: Writing injected SQL for node "model.jinja_practice.my_second_dbt_model"
+17:19:14.630567 [debug] [Thread-1  ]: Writing injected SQL for node "test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710"
+17:19:14.631299 [debug] [Thread-1  ]: finished collecting timing info
+17:19:14.631488 [debug] [Thread-2  ]: finished collecting timing info
+17:19:14.631633 [debug] [Thread-1  ]: Began executing node test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710
+17:19:14.631799 [debug] [Thread-2  ]: Began executing node model.jinja_practice.my_second_dbt_model
+17:19:14.631979 [debug] [Thread-1  ]: finished collecting timing info
+17:19:14.632119 [debug] [Thread-2  ]: finished collecting timing info
+17:19:14.632455 [debug] [Thread-1  ]: Finished running node test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710
+17:19:14.632725 [debug] [Thread-2  ]: Finished running node model.jinja_practice.my_second_dbt_model
+17:19:14.632875 [debug] [Thread-1  ]: Began running node test.jinja_practice.unique_my_first_dbt_model_id.16e066b321
+17:19:14.633346 [debug] [Thread-1  ]: Acquiring new snowflake connection "test.jinja_practice.unique_my_first_dbt_model_id.16e066b321"
+17:19:14.633485 [debug] [Thread-2  ]: Began running node test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778
+17:19:14.633597 [debug] [Thread-1  ]: Began compiling node test.jinja_practice.unique_my_first_dbt_model_id.16e066b321
+17:19:14.633819 [debug] [Thread-2  ]: Acquiring new snowflake connection "test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778"
+17:19:14.633976 [debug] [Thread-1  ]: Compiling test.jinja_practice.unique_my_first_dbt_model_id.16e066b321
+17:19:14.634089 [debug] [Thread-2  ]: Began compiling node test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778
+17:19:14.639870 [debug] [Thread-1  ]: Writing injected SQL for node "test.jinja_practice.unique_my_first_dbt_model_id.16e066b321"
+17:19:14.640049 [debug] [Thread-2  ]: Compiling test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778
+17:19:14.643246 [debug] [Thread-2  ]: Writing injected SQL for node "test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778"
+17:19:14.643507 [debug] [Thread-1  ]: finished collecting timing info
+17:19:14.643635 [debug] [Thread-1  ]: Began executing node test.jinja_practice.unique_my_first_dbt_model_id.16e066b321
+17:19:14.643751 [debug] [Thread-1  ]: finished collecting timing info
+17:19:14.644007 [debug] [Thread-1  ]: Finished running node test.jinja_practice.unique_my_first_dbt_model_id.16e066b321
+17:19:14.644166 [debug] [Thread-1  ]: Began running node test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493
+17:19:14.644457 [debug] [Thread-1  ]: Acquiring new snowflake connection "test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493"
+17:19:14.644583 [debug] [Thread-1  ]: Began compiling node test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493
+17:19:14.644677 [debug] [Thread-2  ]: finished collecting timing info
+17:19:14.644788 [debug] [Thread-1  ]: Compiling test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493
+17:19:14.644900 [debug] [Thread-2  ]: Began executing node test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778
+17:19:14.647588 [debug] [Thread-1  ]: Writing injected SQL for node "test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493"
+17:19:14.647733 [debug] [Thread-2  ]: finished collecting timing info
+17:19:14.648035 [debug] [Thread-2  ]: Finished running node test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778
+17:19:14.648282 [debug] [Thread-1  ]: finished collecting timing info
+17:19:14.648448 [debug] [Thread-1  ]: Began executing node test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493
+17:19:14.648574 [debug] [Thread-1  ]: finished collecting timing info
+17:19:14.648832 [debug] [Thread-1  ]: Finished running node test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493
+17:19:14.649431 [debug] [MainThread]: Connection 'master' was properly closed.
+17:19:14.649559 [debug] [MainThread]: Connection 'test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493' was properly closed.
+17:19:14.649669 [debug] [MainThread]: Connection 'test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778' was properly closed.
+17:19:14.653755 [info ] [MainThread]: Done.
+17:19:14.654045 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1308bb0a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x130dad070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1309fe9a0>]}
+
+
+============================== 2022-07-21 17:20:14.716991 | 7291accb-958f-48f7-9c03-22900e295151 ==============================
+17:20:14.716991 [info ] [MainThread]: Running with dbt=1.0.3
+17:20:14.717738 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/Users/ramg/.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, parse_only=False, threads=None, select=None, exclude=None, selector_name=None, state=None, full_refresh=False, defer=None, cls=<class 'dbt.task.compile.CompileTask'>, which='compile', rpc_method='compile')
+17:20:14.717887 [debug] [MainThread]: Tracking: tracking
+17:20:14.718152 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13e102100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13e102850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13e102460>]}
+17:20:14.742650 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+17:20:14.742982 [debug] [MainThread]: Partial parsing: updated file: jinja_practice://models/example/my_first_dbt_model.sql
+17:20:14.750706 [debug] [MainThread]: 1603: static parser failed on example/my_first_dbt_model.sql
+17:20:14.763366 [debug] [MainThread]: 1602: parser fallback to jinja rendering on example/my_first_dbt_model.sql
+17:20:14.780413 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7291accb-958f-48f7-9c03-22900e295151', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13e2b80d0>]}
+17:20:14.783349 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7291accb-958f-48f7-9c03-22900e295151', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13e0dda60>]}
+17:20:14.783482 [info ] [MainThread]: Found 2 models, 4 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+17:20:14.784131 [info ] [MainThread]: 
+17:20:14.784350 [debug] [MainThread]: Acquiring new snowflake connection "master"
+17:20:14.784691 [debug] [ThreadPool]: Acquiring new snowflake connection "list_test_db_test_schema"
+17:20:14.788154 [debug] [ThreadPool]: Using snowflake connection "list_test_db_test_schema"
+17:20:14.788277 [debug] [ThreadPool]: On list_test_db_test_schema: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "jinja_practice", "target_name": "dev", "connection_name": "list_test_db_test_schema"} */
+
+    show terse objects in test_db.test_schema
+17:20:14.788346 [debug] [ThreadPool]: Opening a new connection, currently in state init
+17:20:15.536160 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.75 seconds
+17:20:15.539906 [debug] [ThreadPool]: On list_test_db_test_schema: Close
+17:20:15.656343 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+17:20:15.656964 [info ] [MainThread]: 
+17:20:15.662768 [debug] [Thread-1  ]: Began running node model.jinja_practice.my_first_dbt_model
+17:20:15.663205 [debug] [Thread-1  ]: Acquiring new snowflake connection "model.jinja_practice.my_first_dbt_model"
+17:20:15.663330 [debug] [Thread-1  ]: Began compiling node model.jinja_practice.my_first_dbt_model
+17:20:15.663450 [debug] [Thread-1  ]: Compiling model.jinja_practice.my_first_dbt_model
+17:20:15.669418 [debug] [Thread-1  ]: Using snowflake connection "model.jinja_practice.my_first_dbt_model"
+17:20:15.669898 [debug] [Thread-1  ]: On model.jinja_practice.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "jinja_practice", "target_name": "dev", "node_id": "model.jinja_practice.my_first_dbt_model"} */
+
+    
+select distinct table_name from test_db.information_schema.tables where table_schema!= 'INFORMATION_SCHEMA'
+17:20:15.670091 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+17:20:17.083222 [debug] [Thread-1  ]: SQL status: SUCCESS 2 in 1.41 seconds
+17:20:17.087284 [debug] [Thread-1  ]: Writing injected SQL for node "model.jinja_practice.my_first_dbt_model"
+17:20:17.105491 [debug] [Thread-1  ]: finished collecting timing info
+17:20:17.123648 [debug] [Thread-1  ]: Began executing node model.jinja_practice.my_first_dbt_model
+17:20:17.124211 [debug] [Thread-1  ]: finished collecting timing info
+17:20:17.124494 [debug] [Thread-1  ]: On model.jinja_practice.my_first_dbt_model: Close
+17:20:17.283145 [debug] [Thread-1  ]: Finished running node model.jinja_practice.my_first_dbt_model
+17:20:17.284351 [debug] [Thread-2  ]: Began running node model.jinja_practice.my_second_dbt_model
+17:20:17.284639 [debug] [Thread-1  ]: Began running node test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710
+17:20:17.285124 [debug] [Thread-2  ]: Acquiring new snowflake connection "model.jinja_practice.my_second_dbt_model"
+17:20:17.285489 [debug] [Thread-1  ]: Acquiring new snowflake connection "test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710"
+17:20:17.285673 [debug] [Thread-2  ]: Began compiling node model.jinja_practice.my_second_dbt_model
+17:20:17.285839 [debug] [Thread-1  ]: Began compiling node test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710
+17:20:17.286047 [debug] [Thread-2  ]: Compiling model.jinja_practice.my_second_dbt_model
+17:20:17.286229 [debug] [Thread-1  ]: Compiling test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710
+17:20:17.290812 [debug] [Thread-2  ]: Writing injected SQL for node "model.jinja_practice.my_second_dbt_model"
+17:20:17.303415 [debug] [Thread-1  ]: Writing injected SQL for node "test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710"
+17:20:17.305399 [debug] [Thread-2  ]: finished collecting timing info
+17:20:17.305616 [debug] [Thread-2  ]: Began executing node model.jinja_practice.my_second_dbt_model
+17:20:17.305805 [debug] [Thread-2  ]: finished collecting timing info
+17:20:17.306188 [debug] [Thread-2  ]: Finished running node model.jinja_practice.my_second_dbt_model
+17:20:17.306357 [debug] [Thread-1  ]: finished collecting timing info
+17:20:17.306570 [debug] [Thread-2  ]: Began running node test.jinja_practice.unique_my_first_dbt_model_id.16e066b321
+17:20:17.307004 [debug] [Thread-1  ]: Began executing node test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710
+17:20:17.307388 [debug] [Thread-2  ]: Acquiring new snowflake connection "test.jinja_practice.unique_my_first_dbt_model_id.16e066b321"
+17:20:17.307565 [debug] [Thread-1  ]: finished collecting timing info
+17:20:17.307716 [debug] [Thread-2  ]: Began compiling node test.jinja_practice.unique_my_first_dbt_model_id.16e066b321
+17:20:17.308016 [debug] [Thread-1  ]: Finished running node test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710
+17:20:17.308181 [debug] [Thread-2  ]: Compiling test.jinja_practice.unique_my_first_dbt_model_id.16e066b321
+17:20:17.308343 [debug] [Thread-1  ]: Began running node test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778
+17:20:17.314405 [debug] [Thread-2  ]: Writing injected SQL for node "test.jinja_practice.unique_my_first_dbt_model_id.16e066b321"
+17:20:17.314733 [debug] [Thread-1  ]: Acquiring new snowflake connection "test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778"
+17:20:17.315038 [debug] [Thread-1  ]: Began compiling node test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778
+17:20:17.315262 [debug] [Thread-1  ]: Compiling test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778
+17:20:17.315433 [debug] [Thread-2  ]: finished collecting timing info
+17:20:17.318518 [debug] [Thread-1  ]: Writing injected SQL for node "test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778"
+17:20:17.318712 [debug] [Thread-2  ]: Began executing node test.jinja_practice.unique_my_first_dbt_model_id.16e066b321
+17:20:17.318969 [debug] [Thread-2  ]: finished collecting timing info
+17:20:17.319315 [debug] [Thread-2  ]: Finished running node test.jinja_practice.unique_my_first_dbt_model_id.16e066b321
+17:20:17.319477 [debug] [Thread-2  ]: Began running node test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493
+17:20:17.319637 [debug] [Thread-1  ]: finished collecting timing info
+17:20:17.319886 [debug] [Thread-2  ]: Acquiring new snowflake connection "test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493"
+17:20:17.320015 [debug] [Thread-1  ]: Began executing node test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778
+17:20:17.320123 [debug] [Thread-2  ]: Began compiling node test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493
+17:20:17.320238 [debug] [Thread-1  ]: finished collecting timing info
+17:20:17.320343 [debug] [Thread-2  ]: Compiling test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493
+17:20:17.320564 [debug] [Thread-1  ]: Finished running node test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778
+17:20:17.323201 [debug] [Thread-2  ]: Writing injected SQL for node "test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493"
+17:20:17.323597 [debug] [Thread-2  ]: finished collecting timing info
+17:20:17.323712 [debug] [Thread-2  ]: Began executing node test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493
+17:20:17.323819 [debug] [Thread-2  ]: finished collecting timing info
+17:20:17.324047 [debug] [Thread-2  ]: Finished running node test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493
+17:20:17.324656 [debug] [MainThread]: Connection 'master' was properly closed.
+17:20:17.324778 [debug] [MainThread]: Connection 'test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778' was properly closed.
+17:20:17.324872 [debug] [MainThread]: Connection 'test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493' was properly closed.
+17:20:17.328851 [info ] [MainThread]: Done.
+17:20:17.329159 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13e1a0520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13e1a0040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13e68cb80>]}
+
+
+============================== 2022-07-21 17:56:29.643030 | de885cb7-a52a-4340-b9ba-aa065bceed28 ==============================
+17:56:29.643030 [info ] [MainThread]: Running with dbt=1.0.3
+17:56:29.643518 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/Users/ramg/.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, parse_only=False, threads=None, select=None, exclude=None, selector_name=None, state=None, full_refresh=False, defer=None, cls=<class 'dbt.task.compile.CompileTask'>, which='compile', rpc_method='compile')
+17:56:29.643649 [debug] [MainThread]: Tracking: tracking
+17:56:29.643927 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x138562100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x138562eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x138544cd0>]}
+17:56:29.669975 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+17:56:29.670248 [debug] [MainThread]: Partial parsing: updated file: jinja_practice://models/example/my_first_dbt_model.sql
+17:56:29.677575 [debug] [MainThread]: 1603: static parser failed on example/my_first_dbt_model.sql
+17:56:29.680898 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13864c3a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x138673670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1386735b0>]}
+
+
+============================== 2022-07-21 17:56:53.841467 | 740f7dd2-3c56-4114-a21e-00d902783f13 ==============================
+17:56:53.841467 [info ] [MainThread]: Running with dbt=1.0.3
+17:56:53.841957 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/Users/ramg/.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, parse_only=False, threads=None, select=None, exclude=None, selector_name=None, state=None, full_refresh=False, defer=None, cls=<class 'dbt.task.compile.CompileTask'>, which='compile', rpc_method='compile')
+17:56:53.842091 [debug] [MainThread]: Tracking: tracking
+17:56:53.842340 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fcc4580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fcc4370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fcc4610>]}
+17:56:53.866984 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+17:56:53.867285 [debug] [MainThread]: Partial parsing: updated file: jinja_practice://models/example/my_first_dbt_model.sql
+17:56:53.874154 [debug] [MainThread]: 1603: static parser failed on example/my_first_dbt_model.sql
+17:56:53.890255 [debug] [MainThread]: 1602: parser fallback to jinja rendering on example/my_first_dbt_model.sql
+17:56:53.907111 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '740f7dd2-3c56-4114-a21e-00d902783f13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fe970d0>]}
+17:56:53.910060 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '740f7dd2-3c56-4114-a21e-00d902783f13', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fd78dc0>]}
+17:56:53.910201 [info ] [MainThread]: Found 2 models, 4 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+17:56:53.910864 [info ] [MainThread]: 
+17:56:53.911081 [debug] [MainThread]: Acquiring new snowflake connection "master"
+17:56:53.911410 [debug] [ThreadPool]: Acquiring new snowflake connection "list_test_db_test_schema"
+17:56:53.914620 [debug] [ThreadPool]: Using snowflake connection "list_test_db_test_schema"
+17:56:53.914707 [debug] [ThreadPool]: On list_test_db_test_schema: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "jinja_practice", "target_name": "dev", "connection_name": "list_test_db_test_schema"} */
+
+    show terse objects in test_db.test_schema
+17:56:53.914771 [debug] [ThreadPool]: Opening a new connection, currently in state init
+17:56:54.630865 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.72 seconds
+17:56:54.634358 [debug] [ThreadPool]: On list_test_db_test_schema: Close
+17:56:54.757893 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+17:56:54.758475 [info ] [MainThread]: 
+17:56:54.765641 [debug] [Thread-1  ]: Began running node model.jinja_practice.my_first_dbt_model
+17:56:54.766382 [debug] [Thread-1  ]: Acquiring new snowflake connection "model.jinja_practice.my_first_dbt_model"
+17:56:54.766597 [debug] [Thread-1  ]: Began compiling node model.jinja_practice.my_first_dbt_model
+17:56:54.766787 [debug] [Thread-1  ]: Compiling model.jinja_practice.my_first_dbt_model
+17:56:54.776543 [debug] [Thread-1  ]: Using snowflake connection "model.jinja_practice.my_first_dbt_model"
+17:56:54.776840 [debug] [Thread-1  ]: On model.jinja_practice.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "jinja_practice", "target_name": "dev", "node_id": "model.jinja_practice.my_first_dbt_model"} */
+
+    
+select distinct table_name from test_db.information_schema.tables where table_schema!= 'INFORMATION_SCHEMA'
+17:56:54.776990 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+17:56:56.342212 [debug] [Thread-1  ]: SQL status: SUCCESS 2 in 1.57 seconds
+17:56:56.348711 [debug] [Thread-1  ]: finished collecting timing info
+17:56:56.349093 [debug] [Thread-1  ]: On model.jinja_practice.my_first_dbt_model: Close
+17:56:56.469015 [debug] [Thread-1  ]: Runtime Error in model my_first_dbt_model (models/example/my_first_dbt_model.sql)
+  Tried to run an empty query on model 'model.jinja_practice.my_first_dbt_model'. If you are conditionally running
+  sql, eg. in a model hook, make sure your `else` clause contains valid sql!
+  
+  Provided SQL:
+  /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "jinja_practice", "target_name": "dev", "node_id": "model.jinja_practice.my_first_dbt_model"} */
+  
+      
+    
+17:56:56.469818 [debug] [Thread-1  ]: Finished running node model.jinja_practice.my_first_dbt_model
+17:56:56.470911 [debug] [MainThread]: Connection 'master' was properly closed.
+17:56:56.471261 [debug] [MainThread]: Connection 'model.jinja_practice.my_first_dbt_model' was properly closed.
+17:56:56.471640 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fd78580>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10fd78160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12a139a30>]}
+
+
+============================== 2022-07-21 17:57:34.830528 | ca64026f-c35c-4728-bd38-c87609b0f857 ==============================
+17:57:34.830528 [info ] [MainThread]: Running with dbt=1.0.3
+17:57:34.831228 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/Users/ramg/.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, parse_only=False, threads=None, select=None, exclude=None, selector_name=None, state=None, full_refresh=False, defer=None, cls=<class 'dbt.task.compile.CompileTask'>, which='compile', rpc_method='compile')
+17:57:34.831377 [debug] [MainThread]: Tracking: tracking
+17:57:34.831623 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1277e3100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1277e3eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1277c4cd0>]}
+17:57:34.858599 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+17:57:34.858981 [debug] [MainThread]: Partial parsing: updated file: jinja_practice://models/example/my_first_dbt_model.sql
+17:57:34.865548 [debug] [MainThread]: 1603: static parser failed on example/my_first_dbt_model.sql
+17:57:34.880893 [debug] [MainThread]: 1602: parser fallback to jinja rendering on example/my_first_dbt_model.sql
+17:57:34.895471 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ca64026f-c35c-4728-bd38-c87609b0f857', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1279960d0>]}
+17:57:34.898681 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ca64026f-c35c-4728-bd38-c87609b0f857', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1277da1f0>]}
+17:57:34.898816 [info ] [MainThread]: Found 2 models, 4 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+17:57:34.899470 [info ] [MainThread]: 
+17:57:34.899687 [debug] [MainThread]: Acquiring new snowflake connection "master"
+17:57:34.900035 [debug] [ThreadPool]: Acquiring new snowflake connection "list_test_db_test_schema"
+17:57:34.903477 [debug] [ThreadPool]: Using snowflake connection "list_test_db_test_schema"
+17:57:34.903644 [debug] [ThreadPool]: On list_test_db_test_schema: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "jinja_practice", "target_name": "dev", "connection_name": "list_test_db_test_schema"} */
+
+    show terse objects in test_db.test_schema
+17:57:34.903720 [debug] [ThreadPool]: Opening a new connection, currently in state init
+17:57:35.923719 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 1.02 seconds
+17:57:35.925996 [debug] [ThreadPool]: On list_test_db_test_schema: Close
+17:57:36.041929 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+17:57:36.042782 [info ] [MainThread]: 
+17:57:36.050168 [debug] [Thread-1  ]: Began running node model.jinja_practice.my_first_dbt_model
+17:57:36.050772 [debug] [Thread-1  ]: Acquiring new snowflake connection "model.jinja_practice.my_first_dbt_model"
+17:57:36.050988 [debug] [Thread-1  ]: Began compiling node model.jinja_practice.my_first_dbt_model
+17:57:36.051179 [debug] [Thread-1  ]: Compiling model.jinja_practice.my_first_dbt_model
+17:57:36.060876 [debug] [Thread-1  ]: Using snowflake connection "model.jinja_practice.my_first_dbt_model"
+17:57:36.061152 [debug] [Thread-1  ]: On model.jinja_practice.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "jinja_practice", "target_name": "dev", "node_id": "model.jinja_practice.my_first_dbt_model"} */
+
+    
+select distinct table_name from test_db.information_schema.tables where table_schema!= 'INFORMATION_SCHEMA'
+17:57:36.061299 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+17:57:37.591045 [debug] [Thread-1  ]: SQL status: SUCCESS 2 in 1.53 seconds
+17:57:37.598742 [debug] [Thread-1  ]: finished collecting timing info
+17:57:37.599320 [debug] [Thread-1  ]: On model.jinja_practice.my_first_dbt_model: Close
+17:57:37.713540 [debug] [Thread-1  ]: Runtime Error in model my_first_dbt_model (models/example/my_first_dbt_model.sql)
+  Tried to run an empty query on model 'model.jinja_practice.my_first_dbt_model'. If you are conditionally running
+  sql, eg. in a model hook, make sure your `else` clause contains valid sql!
+  
+  Provided SQL:
+  /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "jinja_practice", "target_name": "dev", "node_id": "model.jinja_practice.my_first_dbt_model"} */
+  
+      
+    
+17:57:37.714143 [debug] [Thread-1  ]: Finished running node model.jinja_practice.my_first_dbt_model
+17:57:37.715079 [debug] [MainThread]: Connection 'master' was properly closed.
+17:57:37.715475 [debug] [MainThread]: Connection 'model.jinja_practice.my_first_dbt_model' was properly closed.
+17:57:37.715854 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x127877640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x127877df0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x127c73f70>]}
+
+
+============================== 2022-07-21 17:58:19.309322 | 4c7d0524-396f-495f-811a-5305c8ad0ee7 ==============================
+17:58:19.309322 [info ] [MainThread]: Running with dbt=1.0.3
+17:58:19.310083 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/Users/ramg/.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, parse_only=False, threads=None, select=None, exclude=None, selector_name=None, state=None, full_refresh=False, defer=None, cls=<class 'dbt.task.compile.CompileTask'>, which='compile', rpc_method='compile')
+17:58:19.310237 [debug] [MainThread]: Tracking: tracking
+17:58:19.310482 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12c015c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12c015040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12c015a60>]}
+17:58:19.336579 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+17:58:19.336876 [debug] [MainThread]: Partial parsing: updated file: jinja_practice://models/example/my_first_dbt_model.sql
+17:58:19.344714 [debug] [MainThread]: 1603: static parser failed on example/my_first_dbt_model.sql
+17:58:19.357236 [debug] [MainThread]: 1602: parser fallback to jinja rendering on example/my_first_dbt_model.sql
+17:58:19.387395 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4c7d0524-396f-495f-811a-5305c8ad0ee7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12c1d60d0>]}
+17:58:19.390567 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4c7d0524-396f-495f-811a-5305c8ad0ee7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12c013460>]}
+17:58:19.390712 [info ] [MainThread]: Found 2 models, 4 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+17:58:19.391415 [info ] [MainThread]: 
+17:58:19.391653 [debug] [MainThread]: Acquiring new snowflake connection "master"
+17:58:19.392063 [debug] [ThreadPool]: Acquiring new snowflake connection "list_test_db_test_schema"
+17:58:19.398024 [debug] [ThreadPool]: Using snowflake connection "list_test_db_test_schema"
+17:58:19.398210 [debug] [ThreadPool]: On list_test_db_test_schema: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "jinja_practice", "target_name": "dev", "connection_name": "list_test_db_test_schema"} */
+
+    show terse objects in test_db.test_schema
+17:58:19.398298 [debug] [ThreadPool]: Opening a new connection, currently in state init
+17:58:20.157156 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.76 seconds
+17:58:20.160433 [debug] [ThreadPool]: On list_test_db_test_schema: Close
+17:58:20.269282 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+17:58:20.270071 [info ] [MainThread]: 
+17:58:20.277939 [debug] [Thread-1  ]: Began running node model.jinja_practice.my_first_dbt_model
+17:58:20.278592 [debug] [Thread-1  ]: Acquiring new snowflake connection "model.jinja_practice.my_first_dbt_model"
+17:58:20.278817 [debug] [Thread-1  ]: Began compiling node model.jinja_practice.my_first_dbt_model
+17:58:20.279025 [debug] [Thread-1  ]: Compiling model.jinja_practice.my_first_dbt_model
+17:58:20.288547 [debug] [Thread-1  ]: Using snowflake connection "model.jinja_practice.my_first_dbt_model"
+17:58:20.288851 [debug] [Thread-1  ]: On model.jinja_practice.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "jinja_practice", "target_name": "dev", "node_id": "model.jinja_practice.my_first_dbt_model"} */
+
+    
+select distinct table_name from test_db.information_schema.tables where table_schema!= 'INFORMATION_SCHEMA'
+17:58:20.289029 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+17:58:21.385941 [debug] [Thread-1  ]: SQL status: SUCCESS 2 in 1.1 seconds
+17:58:21.390344 [debug] [Thread-1  ]: Using snowflake connection "model.jinja_practice.my_first_dbt_model"
+17:58:21.390708 [debug] [Thread-1  ]: On model.jinja_practice.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "jinja_practice", "target_name": "dev", "node_id": "model.jinja_practice.my_first_dbt_model"} */
+
+    
+        SELECT distinct column_name from test_db.information_schema.tables where table_name =  'A2'
+17:58:21.581720 [debug] [Thread-1  ]: Snowflake adapter: Snowflake query id: 01a5c276-0004-267c-0000-001b988780fd
+17:58:21.582196 [debug] [Thread-1  ]: Snowflake adapter: Snowflake error: 000904 (42000): SQL compilation error: error line 1 at position 16
+invalid identifier 'COLUMN_NAME'
+17:58:21.584383 [debug] [Thread-1  ]: finished collecting timing info
+17:58:21.584716 [debug] [Thread-1  ]: On model.jinja_practice.my_first_dbt_model: Close
+17:58:21.698434 [debug] [Thread-1  ]: Database Error in model my_first_dbt_model (models/example/my_first_dbt_model.sql)
+  000904 (42000): SQL compilation error: error line 1 at position 16
+  invalid identifier 'COLUMN_NAME'
+17:58:21.699556 [debug] [Thread-1  ]: Finished running node model.jinja_practice.my_first_dbt_model
+17:58:21.700607 [debug] [MainThread]: Connection 'master' was properly closed.
+17:58:21.701007 [debug] [MainThread]: Connection 'model.jinja_practice.my_first_dbt_model' was properly closed.
+17:58:21.701351 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12c10a7f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12c10a490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12c4b6be0>]}
+
+
+============================== 2022-07-21 18:01:28.785612 | 05688e22-9ae3-4ec7-ad4e-f585e7ded39f ==============================
+18:01:28.785612 [info ] [MainThread]: Running with dbt=1.0.3
+18:01:28.786399 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/Users/ramg/.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, parse_only=False, threads=None, select=None, exclude=None, selector_name=None, state=None, full_refresh=False, defer=None, cls=<class 'dbt.task.compile.CompileTask'>, which='compile', rpc_method='compile')
+18:01:28.786552 [debug] [MainThread]: Tracking: tracking
+18:01:28.786849 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118c36c10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118c363d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118c362b0>]}
+18:01:28.824264 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+18:01:28.824626 [debug] [MainThread]: Partial parsing: updated file: jinja_practice://models/example/my_first_dbt_model.sql
+18:01:28.833046 [debug] [MainThread]: 1603: static parser failed on example/my_first_dbt_model.sql
+18:01:28.852899 [debug] [MainThread]: 1602: parser fallback to jinja rendering on example/my_first_dbt_model.sql
+18:01:28.882486 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '05688e22-9ae3-4ec7-ad4e-f585e7ded39f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118def0d0>]}
+18:01:28.886848 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '05688e22-9ae3-4ec7-ad4e-f585e7ded39f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118c19af0>]}
+18:01:28.886991 [info ] [MainThread]: Found 2 models, 4 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+18:01:28.887911 [info ] [MainThread]: 
+18:01:28.888188 [debug] [MainThread]: Acquiring new snowflake connection "master"
+18:01:28.888587 [debug] [ThreadPool]: Acquiring new snowflake connection "list_test_db_test_schema"
+18:01:28.892470 [debug] [ThreadPool]: Using snowflake connection "list_test_db_test_schema"
+18:01:28.892673 [debug] [ThreadPool]: On list_test_db_test_schema: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "jinja_practice", "target_name": "dev", "connection_name": "list_test_db_test_schema"} */
+
+    show terse objects in test_db.test_schema
+18:01:28.892753 [debug] [ThreadPool]: Opening a new connection, currently in state init
+18:01:29.666297 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.77 seconds
+18:01:29.670217 [debug] [ThreadPool]: On list_test_db_test_schema: Close
+18:01:29.804485 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+18:01:29.805413 [info ] [MainThread]: 
+18:01:29.811755 [debug] [Thread-1  ]: Began running node model.jinja_practice.my_first_dbt_model
+18:01:29.812387 [debug] [Thread-1  ]: Acquiring new snowflake connection "model.jinja_practice.my_first_dbt_model"
+18:01:29.812596 [debug] [Thread-1  ]: Began compiling node model.jinja_practice.my_first_dbt_model
+18:01:29.812789 [debug] [Thread-1  ]: Compiling model.jinja_practice.my_first_dbt_model
+18:01:29.822519 [debug] [Thread-1  ]: Using snowflake connection "model.jinja_practice.my_first_dbt_model"
+18:01:29.822784 [debug] [Thread-1  ]: On model.jinja_practice.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "jinja_practice", "target_name": "dev", "node_id": "model.jinja_practice.my_first_dbt_model"} */
+
+    
+select distinct table_name from test_db.information_schema.tables where table_schema!= 'INFORMATION_SCHEMA'
+18:01:29.822932 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+18:01:31.030538 [debug] [Thread-1  ]: SQL status: SUCCESS 2 in 1.21 seconds
+18:01:31.035995 [debug] [Thread-1  ]: Using snowflake connection "model.jinja_practice.my_first_dbt_model"
+18:01:31.036299 [debug] [Thread-1  ]: On model.jinja_practice.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "jinja_practice", "target_name": "dev", "node_id": "model.jinja_practice.my_first_dbt_model"} */
+
+    
+        SELECT distinct column_name from test_db.information_schema.columns where table_name =  'A2'
+18:01:32.074437 [debug] [Thread-1  ]: SQL status: SUCCESS 2 in 1.04 seconds
+18:01:32.075989 [debug] [Thread-1  ]: Using snowflake connection "model.jinja_practice.my_first_dbt_model"
+18:01:32.076134 [debug] [Thread-1  ]: On model.jinja_practice.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "jinja_practice", "target_name": "dev", "node_id": "model.jinja_practice.my_first_dbt_model"} */
+
+    
+        SELECT distinct column_name from test_db.information_schema.columns where table_name =  'A1'
+18:01:33.237300 [debug] [Thread-1  ]: SQL status: SUCCESS 3 in 1.16 seconds
+18:01:33.240310 [debug] [Thread-1  ]: Writing injected SQL for node "model.jinja_practice.my_first_dbt_model"
+18:01:33.242368 [debug] [Thread-1  ]: finished collecting timing info
+18:01:33.242594 [debug] [Thread-1  ]: Began executing node model.jinja_practice.my_first_dbt_model
+18:01:33.242816 [debug] [Thread-1  ]: finished collecting timing info
+18:01:33.243146 [debug] [Thread-1  ]: On model.jinja_practice.my_first_dbt_model: Close
+18:01:33.400862 [debug] [Thread-1  ]: Finished running node model.jinja_practice.my_first_dbt_model
+18:01:33.402042 [debug] [Thread-2  ]: Began running node model.jinja_practice.my_second_dbt_model
+18:01:33.402343 [debug] [Thread-1  ]: Began running node test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710
+18:01:33.402930 [debug] [Thread-2  ]: Acquiring new snowflake connection "model.jinja_practice.my_second_dbt_model"
+18:01:33.403324 [debug] [Thread-1  ]: Acquiring new snowflake connection "test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710"
+18:01:33.403535 [debug] [Thread-2  ]: Began compiling node model.jinja_practice.my_second_dbt_model
+18:01:33.403714 [debug] [Thread-1  ]: Began compiling node test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710
+18:01:33.403912 [debug] [Thread-2  ]: Compiling model.jinja_practice.my_second_dbt_model
+18:01:33.404087 [debug] [Thread-1  ]: Compiling test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710
+18:01:33.408478 [debug] [Thread-2  ]: Writing injected SQL for node "model.jinja_practice.my_second_dbt_model"
+18:01:33.420640 [debug] [Thread-1  ]: Writing injected SQL for node "test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710"
+18:01:33.421538 [debug] [Thread-2  ]: finished collecting timing info
+18:01:33.421781 [debug] [Thread-2  ]: Began executing node model.jinja_practice.my_second_dbt_model
+18:01:33.421941 [debug] [Thread-1  ]: finished collecting timing info
+18:01:33.422122 [debug] [Thread-2  ]: finished collecting timing info
+18:01:33.422299 [debug] [Thread-1  ]: Began executing node test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710
+18:01:33.422674 [debug] [Thread-2  ]: Finished running node model.jinja_practice.my_second_dbt_model
+18:01:33.422846 [debug] [Thread-1  ]: finished collecting timing info
+18:01:33.423034 [debug] [Thread-2  ]: Began running node test.jinja_practice.unique_my_first_dbt_model_id.16e066b321
+18:01:33.423525 [debug] [Thread-1  ]: Finished running node test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710
+18:01:33.423826 [debug] [Thread-2  ]: Acquiring new snowflake connection "test.jinja_practice.unique_my_first_dbt_model_id.16e066b321"
+18:01:33.424010 [debug] [Thread-1  ]: Began running node test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778
+18:01:33.424206 [debug] [Thread-2  ]: Began compiling node test.jinja_practice.unique_my_first_dbt_model_id.16e066b321
+18:01:33.424505 [debug] [Thread-1  ]: Acquiring new snowflake connection "test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778"
+18:01:33.424669 [debug] [Thread-2  ]: Compiling test.jinja_practice.unique_my_first_dbt_model_id.16e066b321
+18:01:33.424813 [debug] [Thread-1  ]: Began compiling node test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778
+18:01:33.431089 [debug] [Thread-2  ]: Writing injected SQL for node "test.jinja_practice.unique_my_first_dbt_model_id.16e066b321"
+18:01:33.431270 [debug] [Thread-1  ]: Compiling test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778
+18:01:33.434556 [debug] [Thread-1  ]: Writing injected SQL for node "test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778"
+18:01:33.434859 [debug] [Thread-2  ]: finished collecting timing info
+18:01:33.435017 [debug] [Thread-2  ]: Began executing node test.jinja_practice.unique_my_first_dbt_model_id.16e066b321
+18:01:33.435178 [debug] [Thread-2  ]: finished collecting timing info
+18:01:33.435463 [debug] [Thread-2  ]: Finished running node test.jinja_practice.unique_my_first_dbt_model_id.16e066b321
+18:01:33.435617 [debug] [Thread-2  ]: Began running node test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493
+18:01:33.435918 [debug] [Thread-2  ]: Acquiring new snowflake connection "test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493"
+18:01:33.436047 [debug] [Thread-1  ]: finished collecting timing info
+18:01:33.436164 [debug] [Thread-2  ]: Began compiling node test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493
+18:01:33.436289 [debug] [Thread-1  ]: Began executing node test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778
+18:01:33.436408 [debug] [Thread-2  ]: Compiling test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493
+18:01:33.436531 [debug] [Thread-1  ]: finished collecting timing info
+18:01:33.439513 [debug] [Thread-2  ]: Writing injected SQL for node "test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493"
+18:01:33.439783 [debug] [Thread-1  ]: Finished running node test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778
+18:01:33.440085 [debug] [Thread-2  ]: finished collecting timing info
+18:01:33.440198 [debug] [Thread-2  ]: Began executing node test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493
+18:01:33.440304 [debug] [Thread-2  ]: finished collecting timing info
+18:01:33.440513 [debug] [Thread-2  ]: Finished running node test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493
+18:01:33.441136 [debug] [MainThread]: Connection 'master' was properly closed.
+18:01:33.441250 [debug] [MainThread]: Connection 'test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778' was properly closed.
+18:01:33.441344 [debug] [MainThread]: Connection 'test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493' was properly closed.
+18:01:33.445139 [info ] [MainThread]: Done.
+18:01:33.445448 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118cd45b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118cd46a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118cd40a0>]}
+
+
+============================== 2022-07-21 18:02:32.710452 | a437884d-fe40-42b8-ad87-32cf1e2d7575 ==============================
+18:02:32.710452 [info ] [MainThread]: Running with dbt=1.0.3
+18:02:32.716228 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/Users/ramg/.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, parse_only=False, threads=None, select=None, exclude=None, selector_name=None, state=None, full_refresh=False, defer=None, cls=<class 'dbt.task.compile.CompileTask'>, which='compile', rpc_method='compile')
+18:02:32.716691 [debug] [MainThread]: Tracking: tracking
+18:02:32.717297 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11fc83b80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11fc83f10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11fc83f40>]}
+18:02:32.748130 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+18:02:32.748413 [debug] [MainThread]: Partial parsing: updated file: jinja_practice://models/example/my_first_dbt_model.sql
+18:02:32.753937 [debug] [MainThread]: 1603: static parser failed on example/my_first_dbt_model.sql
+18:02:32.766347 [debug] [MainThread]: 1602: parser fallback to jinja rendering on example/my_first_dbt_model.sql
+18:02:32.780056 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a437884d-fe40-42b8-ad87-32cf1e2d7575', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12f8520d0>]}
+18:02:32.783075 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a437884d-fe40-42b8-ad87-32cf1e2d7575', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11fc9a310>]}
+18:02:32.783209 [info ] [MainThread]: Found 2 models, 4 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+18:02:32.783886 [info ] [MainThread]: 
+18:02:32.784101 [debug] [MainThread]: Acquiring new snowflake connection "master"
+18:02:32.784431 [debug] [ThreadPool]: Acquiring new snowflake connection "list_test_db_test_schema"
+18:02:32.787942 [debug] [ThreadPool]: Using snowflake connection "list_test_db_test_schema"
+18:02:32.788129 [debug] [ThreadPool]: On list_test_db_test_schema: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "jinja_practice", "target_name": "dev", "connection_name": "list_test_db_test_schema"} */
+
+    show terse objects in test_db.test_schema
+18:02:32.788215 [debug] [ThreadPool]: Opening a new connection, currently in state init
+18:02:33.730029 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.94 seconds
+18:02:33.733480 [debug] [ThreadPool]: On list_test_db_test_schema: Close
+18:02:33.844280 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+18:02:33.845435 [info ] [MainThread]: 
+18:02:33.853074 [debug] [Thread-1  ]: Began running node model.jinja_practice.my_first_dbt_model
+18:02:33.853956 [debug] [Thread-1  ]: Acquiring new snowflake connection "model.jinja_practice.my_first_dbt_model"
+18:02:33.854200 [debug] [Thread-1  ]: Began compiling node model.jinja_practice.my_first_dbt_model
+18:02:33.854401 [debug] [Thread-1  ]: Compiling model.jinja_practice.my_first_dbt_model
+18:02:33.864082 [debug] [Thread-1  ]: Using snowflake connection "model.jinja_practice.my_first_dbt_model"
+18:02:33.864410 [debug] [Thread-1  ]: On model.jinja_practice.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "jinja_practice", "target_name": "dev", "node_id": "model.jinja_practice.my_first_dbt_model"} */
+
+    
+select distinct table_name from test_db.information_schema.tables where table_schema!= 'INFORMATION_SCHEMA'
+18:02:33.864573 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+18:02:35.286551 [debug] [Thread-1  ]: SQL status: SUCCESS 2 in 1.42 seconds
+18:02:35.289206 [debug] [Thread-1  ]: Using snowflake connection "model.jinja_practice.my_first_dbt_model"
+18:02:35.289452 [debug] [Thread-1  ]: On model.jinja_practice.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "jinja_practice", "target_name": "dev", "node_id": "model.jinja_practice.my_first_dbt_model"} */
+
+    
+        SELECT distinct column_name from test_db.information_schema.columns where table_name =  'A2'
+18:02:36.357764 [debug] [Thread-1  ]: SQL status: SUCCESS 2 in 1.07 seconds
+18:02:36.361144 [debug] [Thread-1  ]: Using snowflake connection "model.jinja_practice.my_first_dbt_model"
+18:02:36.361491 [debug] [Thread-1  ]: On model.jinja_practice.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "jinja_practice", "target_name": "dev", "node_id": "model.jinja_practice.my_first_dbt_model"} */
+
+    
+        SELECT distinct column_name from test_db.information_schema.columns where table_name =  'A1'
+18:02:37.678653 [debug] [Thread-1  ]: SQL status: SUCCESS 3 in 1.32 seconds
+18:02:37.683354 [debug] [Thread-1  ]: Writing injected SQL for node "model.jinja_practice.my_first_dbt_model"
+18:02:37.684820 [debug] [Thread-1  ]: finished collecting timing info
+18:02:37.685078 [debug] [Thread-1  ]: Began executing node model.jinja_practice.my_first_dbt_model
+18:02:37.685319 [debug] [Thread-1  ]: finished collecting timing info
+18:02:37.685533 [debug] [Thread-1  ]: On model.jinja_practice.my_first_dbt_model: Close
+18:02:37.795704 [debug] [Thread-1  ]: Finished running node model.jinja_practice.my_first_dbt_model
+18:02:37.796521 [debug] [Thread-2  ]: Began running node model.jinja_practice.my_second_dbt_model
+18:02:37.796687 [debug] [Thread-1  ]: Began running node test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710
+18:02:37.797030 [debug] [Thread-2  ]: Acquiring new snowflake connection "model.jinja_practice.my_second_dbt_model"
+18:02:37.797285 [debug] [Thread-1  ]: Acquiring new snowflake connection "test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710"
+18:02:37.797422 [debug] [Thread-2  ]: Began compiling node model.jinja_practice.my_second_dbt_model
+18:02:37.797544 [debug] [Thread-1  ]: Began compiling node test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710
+18:02:37.797673 [debug] [Thread-2  ]: Compiling model.jinja_practice.my_second_dbt_model
+18:02:37.797794 [debug] [Thread-1  ]: Compiling test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710
+18:02:37.800491 [debug] [Thread-2  ]: Writing injected SQL for node "model.jinja_practice.my_second_dbt_model"
+18:02:37.809257 [debug] [Thread-1  ]: Writing injected SQL for node "test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710"
+18:02:37.810543 [debug] [Thread-1  ]: finished collecting timing info
+18:02:37.810702 [debug] [Thread-2  ]: finished collecting timing info
+18:02:37.810800 [debug] [Thread-1  ]: Began executing node test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710
+18:02:37.810919 [debug] [Thread-2  ]: Began executing node model.jinja_practice.my_second_dbt_model
+18:02:37.811037 [debug] [Thread-1  ]: finished collecting timing info
+18:02:37.811148 [debug] [Thread-2  ]: finished collecting timing info
+18:02:37.811415 [debug] [Thread-1  ]: Finished running node test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710
+18:02:37.811645 [debug] [Thread-2  ]: Finished running node model.jinja_practice.my_second_dbt_model
+18:02:37.811783 [debug] [Thread-1  ]: Began running node test.jinja_practice.unique_my_first_dbt_model_id.16e066b321
+18:02:37.812145 [debug] [Thread-1  ]: Acquiring new snowflake connection "test.jinja_practice.unique_my_first_dbt_model_id.16e066b321"
+18:02:37.812357 [debug] [Thread-1  ]: Began compiling node test.jinja_practice.unique_my_first_dbt_model_id.16e066b321
+18:02:37.812484 [debug] [Thread-1  ]: Compiling test.jinja_practice.unique_my_first_dbt_model_id.16e066b321
+18:02:37.817249 [debug] [Thread-1  ]: Writing injected SQL for node "test.jinja_practice.unique_my_first_dbt_model_id.16e066b321"
+18:02:37.817401 [debug] [Thread-2  ]: Began running node test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778
+18:02:37.817724 [debug] [Thread-2  ]: Acquiring new snowflake connection "test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778"
+18:02:37.817847 [debug] [Thread-2  ]: Began compiling node test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778
+18:02:37.817975 [debug] [Thread-2  ]: Compiling test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778
+18:02:37.820608 [debug] [Thread-2  ]: Writing injected SQL for node "test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778"
+18:02:37.821043 [debug] [Thread-1  ]: finished collecting timing info
+18:02:37.821153 [debug] [Thread-2  ]: finished collecting timing info
+18:02:37.821281 [debug] [Thread-1  ]: Began executing node test.jinja_practice.unique_my_first_dbt_model_id.16e066b321
+18:02:37.821396 [debug] [Thread-2  ]: Began executing node test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778
+18:02:37.821514 [debug] [Thread-1  ]: finished collecting timing info
+18:02:37.821620 [debug] [Thread-2  ]: finished collecting timing info
+18:02:37.821860 [debug] [Thread-1  ]: Finished running node test.jinja_practice.unique_my_first_dbt_model_id.16e066b321
+18:02:37.822087 [debug] [Thread-2  ]: Finished running node test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778
+18:02:37.822212 [debug] [Thread-1  ]: Began running node test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493
+18:02:37.822541 [debug] [Thread-1  ]: Acquiring new snowflake connection "test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493"
+18:02:37.822637 [debug] [Thread-1  ]: Began compiling node test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493
+18:02:37.822726 [debug] [Thread-1  ]: Compiling test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493
+18:02:37.825104 [debug] [Thread-1  ]: Writing injected SQL for node "test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493"
+18:02:37.825386 [debug] [Thread-1  ]: finished collecting timing info
+18:02:37.825490 [debug] [Thread-1  ]: Began executing node test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493
+18:02:37.825587 [debug] [Thread-1  ]: finished collecting timing info
+18:02:37.825794 [debug] [Thread-1  ]: Finished running node test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493
+18:02:37.826273 [debug] [MainThread]: Connection 'master' was properly closed.
+18:02:37.826367 [debug] [MainThread]: Connection 'test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493' was properly closed.
+18:02:37.826443 [debug] [MainThread]: Connection 'test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778' was properly closed.
+18:02:37.829429 [info ] [MainThread]: Done.
+18:02:37.829640 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11fd34400>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11fd34910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11fdf2100>]}
+
+
+============================== 2022-07-21 18:03:48.207326 | a4d56686-c62c-4283-866e-5e3d1cc6419d ==============================
+18:03:48.207326 [info ] [MainThread]: Running with dbt=1.0.3
+18:03:48.207957 [debug] [MainThread]: running dbt with arguments Namespace(record_timing_info=None, debug=None, log_format=None, write_json=None, use_colors=None, printer_width=None, warn_error=None, version_check=None, partial_parse=None, single_threaded=False, use_experimental_parser=None, static_parser=None, profiles_dir='/Users/ramg/.dbt', send_anonymous_usage_stats=None, fail_fast=None, event_buffer_size=None, project_dir=None, profile=None, target=None, vars='{}', log_cache_events=False, parse_only=False, threads=None, select=None, exclude=None, selector_name=None, state=None, full_refresh=False, defer=None, cls=<class 'dbt.task.compile.CompileTask'>, which='compile', rpc_method='compile')
+18:03:48.208114 [debug] [MainThread]: Tracking: tracking
+18:03:48.208373 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13d80a790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13d80a070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13d80ab20>]}
+18:03:48.239215 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+18:03:48.239527 [debug] [MainThread]: Partial parsing: updated file: jinja_practice://models/example/my_first_dbt_model.sql
+18:03:48.245832 [debug] [MainThread]: 1603: static parser failed on example/my_first_dbt_model.sql
+18:03:48.259917 [debug] [MainThread]: 1602: parser fallback to jinja rendering on example/my_first_dbt_model.sql
+18:03:48.273816 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a4d56686-c62c-4283-866e-5e3d1cc6419d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13d9d50d0>]}
+18:03:48.276583 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a4d56686-c62c-4283-866e-5e3d1cc6419d', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103c08dc0>]}
+18:03:48.276717 [info ] [MainThread]: Found 2 models, 4 tests, 0 snapshots, 0 analyses, 179 macros, 0 operations, 0 seed files, 0 sources, 0 exposures, 0 metrics
+18:03:48.277374 [info ] [MainThread]: 
+18:03:48.277593 [debug] [MainThread]: Acquiring new snowflake connection "master"
+18:03:48.277937 [debug] [ThreadPool]: Acquiring new snowflake connection "list_test_db_test_schema"
+18:03:48.281399 [debug] [ThreadPool]: Using snowflake connection "list_test_db_test_schema"
+18:03:48.281574 [debug] [ThreadPool]: On list_test_db_test_schema: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "jinja_practice", "target_name": "dev", "connection_name": "list_test_db_test_schema"} */
+
+    show terse objects in test_db.test_schema
+18:03:48.281659 [debug] [ThreadPool]: Opening a new connection, currently in state init
+18:03:49.148093 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.87 seconds
+18:03:49.152725 [debug] [ThreadPool]: On list_test_db_test_schema: Close
+18:03:49.281803 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+18:03:49.282249 [info ] [MainThread]: 
+18:03:49.288194 [debug] [Thread-1  ]: Began running node model.jinja_practice.my_first_dbt_model
+18:03:49.288782 [debug] [Thread-1  ]: Acquiring new snowflake connection "model.jinja_practice.my_first_dbt_model"
+18:03:49.288986 [debug] [Thread-1  ]: Began compiling node model.jinja_practice.my_first_dbt_model
+18:03:49.289150 [debug] [Thread-1  ]: Compiling model.jinja_practice.my_first_dbt_model
+18:03:49.297452 [debug] [Thread-1  ]: Using snowflake connection "model.jinja_practice.my_first_dbt_model"
+18:03:49.297762 [debug] [Thread-1  ]: On model.jinja_practice.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "jinja_practice", "target_name": "dev", "node_id": "model.jinja_practice.my_first_dbt_model"} */
+
+    
+select distinct table_name from test_db.information_schema.tables where table_schema!= 'INFORMATION_SCHEMA'
+18:03:49.297898 [debug] [Thread-1  ]: Opening a new connection, currently in state closed
+18:03:51.000963 [debug] [Thread-1  ]: SQL status: SUCCESS 2 in 1.7 seconds
+18:03:51.005862 [debug] [Thread-1  ]: Using snowflake connection "model.jinja_practice.my_first_dbt_model"
+18:03:51.006209 [debug] [Thread-1  ]: On model.jinja_practice.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "jinja_practice", "target_name": "dev", "node_id": "model.jinja_practice.my_first_dbt_model"} */
+
+    
+        SELECT distinct column_name from test_db.information_schema.columns where table_name =  'A2'
+18:03:52.090125 [debug] [Thread-1  ]: SQL status: SUCCESS 2 in 1.08 seconds
+18:03:52.091905 [debug] [Thread-1  ]: Using snowflake connection "model.jinja_practice.my_first_dbt_model"
+18:03:52.092072 [debug] [Thread-1  ]: On model.jinja_practice.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.0.3", "profile_name": "jinja_practice", "target_name": "dev", "node_id": "model.jinja_practice.my_first_dbt_model"} */
+
+    
+        SELECT distinct column_name from test_db.information_schema.columns where table_name =  'A1'
+18:03:53.091390 [debug] [Thread-1  ]: SQL status: SUCCESS 3 in 1.0 seconds
+18:03:53.096079 [debug] [Thread-1  ]: Writing injected SQL for node "model.jinja_practice.my_first_dbt_model"
+18:03:53.096987 [debug] [Thread-1  ]: finished collecting timing info
+18:03:53.097223 [debug] [Thread-1  ]: Began executing node model.jinja_practice.my_first_dbt_model
+18:03:53.097449 [debug] [Thread-1  ]: finished collecting timing info
+18:03:53.097665 [debug] [Thread-1  ]: On model.jinja_practice.my_first_dbt_model: Close
+18:03:53.207173 [debug] [Thread-1  ]: Finished running node model.jinja_practice.my_first_dbt_model
+18:03:53.207939 [debug] [Thread-2  ]: Began running node model.jinja_practice.my_second_dbt_model
+18:03:53.208109 [debug] [Thread-1  ]: Began running node test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710
+18:03:53.208415 [debug] [Thread-2  ]: Acquiring new snowflake connection "model.jinja_practice.my_second_dbt_model"
+18:03:53.208703 [debug] [Thread-1  ]: Acquiring new snowflake connection "test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710"
+18:03:53.208848 [debug] [Thread-2  ]: Began compiling node model.jinja_practice.my_second_dbt_model
+18:03:53.208975 [debug] [Thread-1  ]: Began compiling node test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710
+18:03:53.209109 [debug] [Thread-2  ]: Compiling model.jinja_practice.my_second_dbt_model
+18:03:53.209229 [debug] [Thread-1  ]: Compiling test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710
+18:03:53.217630 [debug] [Thread-2  ]: Writing injected SQL for node "model.jinja_practice.my_second_dbt_model"
+18:03:53.220229 [debug] [Thread-1  ]: Writing injected SQL for node "test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710"
+18:03:53.220910 [debug] [Thread-2  ]: finished collecting timing info
+18:03:53.221037 [debug] [Thread-1  ]: finished collecting timing info
+18:03:53.221167 [debug] [Thread-2  ]: Began executing node model.jinja_practice.my_second_dbt_model
+18:03:53.221296 [debug] [Thread-1  ]: Began executing node test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710
+18:03:53.221424 [debug] [Thread-2  ]: finished collecting timing info
+18:03:53.221538 [debug] [Thread-1  ]: finished collecting timing info
+18:03:53.221834 [debug] [Thread-2  ]: Finished running node model.jinja_practice.my_second_dbt_model
+18:03:53.222154 [debug] [Thread-1  ]: Finished running node test.jinja_practice.not_null_my_first_dbt_model_id.5fb22c2710
+18:03:53.222329 [debug] [Thread-2  ]: Began running node test.jinja_practice.unique_my_first_dbt_model_id.16e066b321
+18:03:53.222661 [debug] [Thread-1  ]: Began running node test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778
+18:03:53.222895 [debug] [Thread-2  ]: Acquiring new snowflake connection "test.jinja_practice.unique_my_first_dbt_model_id.16e066b321"
+18:03:53.223137 [debug] [Thread-1  ]: Acquiring new snowflake connection "test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778"
+18:03:53.223260 [debug] [Thread-2  ]: Began compiling node test.jinja_practice.unique_my_first_dbt_model_id.16e066b321
+18:03:53.223382 [debug] [Thread-1  ]: Began compiling node test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778
+18:03:53.223510 [debug] [Thread-2  ]: Compiling test.jinja_practice.unique_my_first_dbt_model_id.16e066b321
+18:03:53.223626 [debug] [Thread-1  ]: Compiling test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778
+18:03:53.228630 [debug] [Thread-2  ]: Writing injected SQL for node "test.jinja_practice.unique_my_first_dbt_model_id.16e066b321"
+18:03:53.230920 [debug] [Thread-1  ]: Writing injected SQL for node "test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778"
+18:03:53.231312 [debug] [Thread-2  ]: finished collecting timing info
+18:03:53.231413 [debug] [Thread-1  ]: finished collecting timing info
+18:03:53.231531 [debug] [Thread-2  ]: Began executing node test.jinja_practice.unique_my_first_dbt_model_id.16e066b321
+18:03:53.231642 [debug] [Thread-1  ]: Began executing node test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778
+18:03:53.231747 [debug] [Thread-2  ]: finished collecting timing info
+18:03:53.231846 [debug] [Thread-1  ]: finished collecting timing info
+18:03:53.232100 [debug] [Thread-2  ]: Finished running node test.jinja_practice.unique_my_first_dbt_model_id.16e066b321
+18:03:53.232303 [debug] [Thread-1  ]: Finished running node test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778
+18:03:53.232423 [debug] [Thread-2  ]: Began running node test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493
+18:03:53.232697 [debug] [Thread-2  ]: Acquiring new snowflake connection "test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493"
+18:03:53.232794 [debug] [Thread-2  ]: Began compiling node test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493
+18:03:53.232889 [debug] [Thread-2  ]: Compiling test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493
+18:03:53.235398 [debug] [Thread-2  ]: Writing injected SQL for node "test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493"
+18:03:53.235677 [debug] [Thread-2  ]: finished collecting timing info
+18:03:53.235776 [debug] [Thread-2  ]: Began executing node test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493
+18:03:53.235861 [debug] [Thread-2  ]: finished collecting timing info
+18:03:53.236037 [debug] [Thread-2  ]: Finished running node test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493
+18:03:53.236525 [debug] [MainThread]: Connection 'master' was properly closed.
+18:03:53.236613 [debug] [MainThread]: Connection 'test.jinja_practice.not_null_my_second_dbt_model_id.151b76d778' was properly closed.
+18:03:53.236687 [debug] [MainThread]: Connection 'test.jinja_practice.unique_my_second_dbt_model_id.57a0f8c493' was properly closed.
+18:03:53.239691 [info ] [MainThread]: Done.
+18:03:53.239901 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13dd895e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13d905670>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13d9056d0>]}
